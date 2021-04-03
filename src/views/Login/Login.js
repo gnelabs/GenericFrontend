@@ -63,6 +63,9 @@ class Login extends Component {
       this.handleVerify();
     } catch (error) {
       alert(error.message);
+      this.setState({
+        loading_cognito: false,
+      });
     }
   }
   
